@@ -35,12 +35,12 @@
             @csrf
             <div class="form-group">
                 <label for="title">標題：</label>
-                <input id="title" name="title" class="form-control" value="{{ old('title') }}" placeholder="請輸入文章標題">
+                <input id="title" name="title" class="form-control" value="{{old('title')}}" placeholder="請輸入文章標題">
             </div>
 
             <div class="form-group">
                 <label for="content">內容：</label>
-                <textarea id="content" class="form-control" rows="10">{{  old('content') }}</textarea>
+                <textarea id="content" name="content" class="form-control" rows="10">{{old('content')}}</textarea>
             </div>
 
             <div class="form-group">
