@@ -38,13 +38,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($posts as $post)
+                @foreach(range(1, 20) as $id)
                     <tr>
-                        <td style="text-align: center">{{ $post->id }}</td>
-                        <td>{{$post->title}}</td>
-                        <td style="text-align: center">{{ ($post->is_feture)?'v':'x' }}</td>
+                        <td style="text-align: center">{{ $id }}</td>
+                        <td>文章標題</td>
+                        <td style="text-align: center">V</td>
                         <td>
-                            <a href="{{ route('admin.posts.edit', $post->id) }}">編輯</a>
+                            <a href="{{ route('admin.posts.edit', $id) }}">編輯</a>
                             /
                             <a href="#">刪除</a>
                         </td>
