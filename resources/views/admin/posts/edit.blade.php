@@ -47,7 +47,7 @@
                 <label for="is_feature">精選？</label>
                 <select id="is_feature" name="is_feature" class="form-control">
                     <option value="0"{{(!$post->is_feature)?'selected':''}}>否</option>
-                    <option value="1"{{(!$post->is_feature)?'selected':''}}>是</option>
+                    <option value="1"{{($post->is_feature)?'selected':''}}>是</option>
                 </select>
             </div>
 
